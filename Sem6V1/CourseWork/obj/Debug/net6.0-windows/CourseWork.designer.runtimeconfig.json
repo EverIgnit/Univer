@@ -1,0 +1,18 @@
+{
+  "runtimeOptions": {
+    "tfm": "net6.0",
+    "framework": {
+      "name": "Microsoft.WindowsDesktop.App",
+      "version": "6.0.0-preview.3.21201.3"
+    },
+    "additionalProbingPaths": [
+      "C:\\Users\\Admin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Admin\\.nuget\\packages",
+      "D:\\Soft\\VS2019ProSDKs\\NuGetPackages",
+      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+    ],
+    "configProperties": {
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

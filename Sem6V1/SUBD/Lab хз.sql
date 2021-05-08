@@ -1,0 +1,15 @@
+CREATE PROCEDURE NEW_STIP 
+@код_студента varchar
+AS
+IF COUNT(SELECT LName
+FROM STUD LEFT JOIN GRADE
+WHERE @код_студента = код_студента AND GRADE.оценка >= 4) >= 5
+BEGINLName
+(SELECT AVG(GRADE.оценка)
+FROM STUD LEFT JOIN GRADE
+WHERE @код_студента = код_студента)
+CASE avg(GRADE.оценка) as n
+WHEN n >=6 AND n <8 THEN UPDATE STUD SET STIP = STIP*0.1
+WHEN n >=8 AND n <9 THEN UPDATE STUD SET STIP = STIP*0.2
+WHEN n >9 THEN UPDATE STUD SET STIP = STIP*0.5
+END;

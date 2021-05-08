@@ -1,0 +1,98 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImxvZ2luIjoidHJhbm4iLCJpYXQiOjE1ODIyMzIwOTAsImV4cCI6MTU4MjIzMjY5MH0.wHBTEXnDqHk7IobH5AZ0y6umYkvviitC18_ZhNcwqKA
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "login": "trann",
+  "password": "trann"
+}
+
+###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "refreshToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsImlhdCI6MTU3OTYwNDMxMn0.wgx5mBCvmXEW0sqXz3OxE6XhP4cXCCyXeGWy5-ACzEg"
+}
+
+###
+
+POST http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImxvZ2luIjoidHJhbm4iLCJpYXQiOjE1ODEzNTExMzYsImV4cCI6MTU4MTM1MTczNn0.dI4d04MAIffJxTa8IzDXFCzMzKcRZdLJqtUxYj4VysI
+Content-Type: application/json
+
+{
+	"description": "test7",
+	"tags": [
+		"test7",
+		"hello",
+    "123123123"
+	]
+}
+
+###
+
+POST http://localhost:3000/posts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImxvZ2luIjoidHJhbm4iLCJpYXQiOjE1ODIyMzIwOTAsImV4cCI6MTU4MjIzMjY5MH0.wHBTEXnDqHk7IobH5AZ0y6umYkvviitC18_ZhNcwqKA
+Content-Type: application/json
+
+{
+  "description": "3UPDATED UPDATED UPDATED UPDATED UPDATED",
+  "tags": [
+    "HELLO___"
+  ]
+}
+
+###
+
+POST http://localhost:3000/registration
+Content-Type: application/json
+
+{
+  "login": "trann21@gmail.com",
+  "password": "trann21@gmail.com",
+  "confirmedPassword": "trann21@gmail.com",
+  "firstName": "trann4",
+  "lastName": "trann4"
+}
+
+###
+
+GET http://localhost:3000/posts?page=1&amount=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImxvZ2luIjoidHJhbm4iLCJpYXQiOjE1ODEwMzI0ODAsImV4cCI6MTU4MTAzMzA4MH0.o6WYYUseG_WLyrgLSqEcJ7jAn80f1VyWk6j2GfSNkvw
+
+###
+
+DELETE http://localhost:3000/requests/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImxvZ2luIjoidHJhbm4iLCJpYXQiOjE1ODEwMzI5NDIsImV4cCI6MTU4MTAzMzU0Mn0._1DGGZjRci2mNRjHclIrT2y5-Jqc3nGMviYai7f9TFY
+
+###
+
+DELETE http://localhost:3000/users/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImxvZ2luIjoidHJhbm4xMSIsImlhdCI6MTU4MTAzMjg4MSwiZXhwIjoxNTgxMDMzNDgxfQ.arHHxaz4PNLPhdNDNQorjQwZ3g3Xxix6udgLegzNgRI
+Content-Type: application/json
+
+{
+  "roleName": "admin"
+}
+
+###
+
+PUT http://localhost:3000/admin/users/1/pickup
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInJvbGVzIjpbImF1dGhvcml6ZWQgdXNlciIsImFkbWluIl0sImlhdCI6MTU3OTYzNDgyMCwiZXhwIjoxNTc5NjM1NDIwfQ.1p-648h8kO_5tzkrOguzh1ZNSN4rvmJNGkvUyhavUBw
+Content-Type: application/json
+
+{
+  "roleName": "admin"
+}
+
+###
+
+DELETE http://localhost:3000/admin/delete-requests/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInJvbGVzIjpbImF1dGhvcml6ZWQgdXNlciIsImFkbWluIl0sImlhdCI6MTU3OTYzNTQxOCwiZXhwIjoxNTc5NjM2MDE4fQ.H6Ha9y1gPh3KHY4UGxDSfzX_ZrBCMLxIISJbu78K6q8

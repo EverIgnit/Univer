@@ -1,0 +1,1 @@
+javac src/Calculator.java src/Lab11Server.java src/IntegralCalculator.java src/Lab11Client.java

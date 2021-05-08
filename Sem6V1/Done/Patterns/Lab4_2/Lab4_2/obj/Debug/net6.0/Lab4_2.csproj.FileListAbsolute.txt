@@ -1,0 +1,16 @@
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.exe
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.deps.json
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.runtimeconfig.json
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.runtimeconfig.dev.json
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.dll
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\ref\Lab4_2.dll
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\bin\Debug\net6.0\Lab4_2.pdb
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.csprojAssemblyReference.cache
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.AssemblyInfoInputs.cache
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.AssemblyInfo.cs
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.csproj.CoreCompileInputs.cache
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.dll
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\ref\Lab4_2.dll
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.pdb
+D:\Programming\Education\Patterns\Lab4_2\Lab4_2\obj\Debug\net6.0\Lab4_2.genruntimeconfig.cache

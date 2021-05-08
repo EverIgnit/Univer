@@ -1,0 +1,102 @@
+CREATE TABLE [users] (
+	id integer IDENTITY(1,1) NOT NULL, PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF),
+	email varchar(64) NOT NULL UNIQUE,
+	password varchar(20) NOT NULL
+)
+GO
+CREATE TABLE [courses] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	teacher_id integer NOT NULL,
+	partner_id integer,
+	title varchar(20) NOT NULL,
+	created_at datetime NOT NULL,
+	updated_at datetime NOT NULL,
+	descr text NOT NULL,
+	studying text NOT NULL,
+	is_individual bit NOT NULL
+)
+GO
+CREATE TABLE [accounts] (
+	account_id integer NOT NULL PRIMARY KEY,
+	first_name varchar(20) NOT NULL,
+	last_name varchar(20) NOT NULL,
+	last_login datetime NOT NULL,
+	is_male bit NOT NULL,
+	second_name varchar(20),
+	birth_date date,
+	about text,
+	skills text,
+	main_info text,
+	organisation varchar(20),
+	balance money NOT NULL DEFAULT '0'
+)
+GO
+CREATE TABLE [courses_students] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF),
+	student_id integer NOT NULL,
+	course_id integer NOT NULL
+)
+GO
+CREATE TABLE [chats] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF)
+)
+GO
+CREATE TABLE [messages] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF),
+	content text NOT NULL,
+	sender_id integer NOT NULL,
+	chat_id integer NOT NULL
+)
+GO
+CREATE TABLE [users_chats] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF),
+	account_id integer NOT NULL,
+	chat_id integer NOT NULL
+)
+GO
+CREATE TABLE [reviews] (
+	id integer IDENTITY(1,1) NOT NULL PRIMARY KEY
+	(
+	[id] ASC
+	) WITH (IGNORE_DUP_KEY = OFF),
+	describtion text,
+	account_id integer NOT NULL,
+	teacher_id integer NOT NULL
+)
+GO
+ALTER TABLE courses ADD CONSTRAINT [FK_teachers_users] FOREIGN KEY ([teacher_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE courses ADD CONSTRAINT [FK_partner_users] FOREIGN KEY ([partner_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE accounts ADD CONSTRAINT [FK_acc_users] FOREIGN KEY ([account_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE courses_students ADD CONSTRAINT [FK_course_stud_cid] FOREIGN KEY ([course_id]) REFERENCES [courses]([id])
+GO
+ALTER TABLE courses_students ADD CONSTRAINT [FK_course_stud_sid] FOREIGN KEY ([student_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE messages ADD CONSTRAINT [FK_sender_user] FOREIGN KEY ([sender_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE messages ADD CONSTRAINT [FK_msg_chat] FOREIGN KEY ([chat_id]) REFERENCES [chats]([id])
+GO
+ALTER TABLE users_chats ADD CONSTRAINT [FK_user_chat_uid] FOREIGN KEY ([account_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE users_chats ADD CONSTRAINT [FK_user_chat_cid] FOREIGN KEY ([chat_id]) REFERENCES [chats]([id])
+GO
+ALTER TABLE reviews ADD CONSTRAINT [FK_review_user] FOREIGN KEY ([account_id]) REFERENCES [users]([id])
+GO
+ALTER TABLE reviews ADD CONSTRAINT [FK_review_teacher] FOREIGN KEY ([teacher_id]) REFERENCES [users]([id])
