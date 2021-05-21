@@ -23,7 +23,7 @@ class Program
         moscowAirPorts.Add(shumilino);
         // Hadnling the input
         Console.WriteLine("Select a variable by its number:");
-        typeof(Program).GetFields().ToList().ForEach(Console.WriteLine);
+        typeof(Program).GetFields().ToList().ForEach(el => Console.WriteLine(el.Name));
         var choise = typeof(Program).GetFields()[int.Parse(Console.ReadLine())];
         Console.WriteLine($"{choise.Name}{InfoOf(choise.GetValue(this))}");
     }
