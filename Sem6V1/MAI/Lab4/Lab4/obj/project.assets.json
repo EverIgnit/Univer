@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Education\\MAI\\Lab4\\Lab4\\Lab4.csproj",
+      "projectUniqueName": "D:\\Programming\\repos\\Univer\\Sem6V1\\MAI\\Lab4\\Lab4\\Lab4.csproj",
       "projectName": "Lab4",
-      "projectPath": "D:\\Programming\\Education\\MAI\\Lab4\\Lab4\\Lab4.csproj",
+      "projectPath": "D:\\Programming\\repos\\Univer\\Sem6V1\\MAI\\Lab4\\Lab4\\Lab4.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Education\\MAI\\Lab4\\Lab4\\obj\\",
+      "outputPath": "D:\\Programming\\repos\\Univer\\Sem6V1\\MAI\\Lab4\\Lab4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Soft\\VS2019ProSDKs\\NuGetPackages",
