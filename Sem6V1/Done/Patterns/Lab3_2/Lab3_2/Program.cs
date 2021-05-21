@@ -11,7 +11,20 @@ if (args.Length is not 2 || args[1][^3..] != args[0])
 var carsNTrips = (Activator.CreateInstance(Assembly.GetExecutingAssembly().GetTypes().Where(t => t.Namespace == "Lab3_2" && t.IsClass && t.Name.Substring(0, t.FullName.IndexOf("Handler") - 7).ToLower() == args[0]).First()) as Lab3_2.IReadCardNTrips).ReadData(args[1]);
 carsNTrips.FreightCars.ForEach(car => Console.WriteLine(car));
 carsNTrips.RoadTrips.ForEach(trip => Console.WriteLine(trip));
-carsNTrips.FreightCars.Join(carsNTrips.RoadTrips, fCar => fCar.GovNum, carFromTrip => carFromTrip.GovNum,(fCar, carFromTrip) => new { fCar.GovNum, carFromTrip.Length, carFromTrip.Weight, carFromTrip.DateTime }).GroupBy(tripsByCars => tripsByCars.GovNum).Select(tripsByCars => new {tripsByCars.First().GovNum,Sum = tripsByCars.Sum(carNTrip => carNTrip.Length),AvgWeight = Math.Truncate(tripsByCars.Average(carNTrip => (DateTime.Now - carNTrip.DateTime).Days < 31? carNTrip.Weight:null)??0)}).ToList().ForEach(carWithSum => OutByProps(carWithSum));
+carsNTrips.FreightCars.Join(carsNTrips.RoadTrips,
+    fCar => fCar.GovNum,
+    carFromTrip => carFromTrip.GovNum,
+    (fCar, carFromTrip) => new { fCar.GovNum, carFromTrip.Length, carFromTrip.Weight, carFromTrip.DateTime }
+    ).GroupBy(tripsByCars => tripsByCars.GovNum)
+    .Select(tripsByCars => 
+    new {
+        tripsByCars.First().GovNum,
+        Sum = tripsByCars.Select(carNTrip => carNTrip.Length).Sum(),
+        AvgWeight = Math.Truncate(
+            tripsByCars.Average(carNTrip => (DateTime.Now - carNTrip.DateTime).Days < 31? carNTrip.Weight:null)??0)
+    }
+    ).ToList()
+    .ForEach(carWithSum => OutByProps(carWithSum));
 static void OutByProps(object obj)
 {
     obj.GetType().GetProperties().ToList().ForEach(prop => Console.Write($"{prop.Name}: {prop.GetValue(obj)} | "));
