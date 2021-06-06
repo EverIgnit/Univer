@@ -1,0 +1,166 @@
+GET /clock.html HTTP/1.1<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+Host: localhost:9090<!DOCTYPE html>
+<html>
+<head>
+<title>
+My first HTML-site ever created
+</title>
+</head>
+<body>
+<style>
+body {background: url(https://somnomed.com/wp-content/uploads/2017/09/website-background-1.jpg)}
+</style>
+<blockquote>
+<b>
+<font size="7" face="Gabriola" align="center">
+<font color="aquamarine">
+<
+<font color="white">
+epam
+<font color="aquamarine">
+> 
+<font color="black">
+systems
+<h5>
+<i>
+<img src="https://www.slovodelu.by/upload/medialibrary/21f/videoblocks-editorial-epam-systems-inc-logo-on-glass-building_sosf4mlbm_thumbnail-full01.png" style="width:320px;height:180px;border:0;">
+<br>
+Say "H!":
+<input>
+<font color="lime" size="6">
+<table border="2">
+<tr><td>Less 1</td><td>Less 2</td><td>Less 3</td><tr>
+<td>20.02</td><td>29.02</td><td>05.02</td>
+</table>
+<font color="black">
+<br/>
+Official 
+<a href="https://www.epam.com/"> Web-site </a>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>
+My first HTML-site ever created
+</title>
+</head>
+<body>
+<style>
+body {background: url(https://somnomed.com/wp-content/uploads/2017/09/website-background-1.jpg)}
+</style>
+<blockquote>
+<b>
+<font size="7" face="Gabriola" align="center">
+<font color="aquamarine">
+<
+<font color="white">
+epam
+<font color="aquamarine">
+> 
+<font color="black">
+systems
+<h5>
+<i>
+<img src="https://www.slovodelu.by/upload/medialibrary/21f/videoblocks-editorial-epam-systems-inc-logo-on-glass-building_sosf4mlbm_thumbnail-full01.png" style="width:320px;height:180px;border:0;">
+<br>
+Say "H!":
+<input>
+<font color="lime" size="6">
+<table border="2">
+<tr><td>Less 1</td><td>Less 2</td><td>Less 3</td><tr>
+<td>20.02</td><td>29.02</td><td>05.02</td>
+</table>
+<font color="black">
+<br/>
+Official 
+<a href="https://www.epam.com/"> Web-site </a>
+</body>
+</html>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 Not Found</title>
+</head>
+<body>
+	404 Not Found
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equ
