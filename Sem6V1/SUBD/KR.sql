@@ -1,0 +1,58 @@
+﻿--create function max_avg_grade(@group_id smallint)
+--returns smallint
+--begin
+--declare @res smallint
+--select @res = max(avg_grade)
+--from
+--(
+--	select avg_grade = avg(grades.Grades), students.Student_id, students.Group_id
+--	from students join grades on
+--	(students.Student_id = grades.Student_id)
+--	group by students.Student_id, students.Group_id
+--)
+--as avg_stud_grades
+--where avg_stud_grades.Group_id = @group_id
+--return @res
+--end;
+--select max_avg_grade = dbo.max_avg_grade(groups.Group_id), avg_stud_grades.Group_id, avg_stud_grades.SSurname, avg_stud_grades.Student_id
+--from groups join
+--(
+--	select avg_grade = avg(grades.Grades), students.Student_id, students.SSurname, students.Group_id
+--	from students join grades on
+--	(students.Student_id = grades.Student_id)
+--	group by students.Student_id, students.Group_id, students.SSurname
+--)
+--as avg_stud_grades
+--on groups.Group_id = avg_stud_grades.Group_id
+--drop procedure failed_studs;
+--go
+--create procedure failed_studs (@group_num smallint, @failed_studs_am smallint output) as
+--begin
+--	select @failed_studs_am = count(Student_id) from students
+--	where @group_num = students.Group_id and 
+--	(
+--		select count(timetable.Group_id)
+--		from timetable join students
+--		on students.Group_id = timetable.Group_id
+--	)
+--	>
+--	(
+--		select count(students.Student_id)
+--		from students join grades
+--		on students.Student_id = grades.Student_id
+--	)
+--end;
+--go
+--declare @failed_studs_am smallint
+--declare @group_num smallint = 45
+--exec dbo.failed_studs @group_num, @failed_studs_am output
+--print @failed_studs_am
+
+--create trigger carefully_delete
+--on students
+--instead of delete 
+--as
+--delete from grades
+--where grades.Student_id = (select Student_id from deleted)
+--delete from students
+--where students.Student_id = (select Student_id from deleted)
