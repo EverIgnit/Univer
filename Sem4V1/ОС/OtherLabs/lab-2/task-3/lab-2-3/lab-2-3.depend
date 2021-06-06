@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1590783110 source:/home/vlatislav/proga/lab-2/task-3/lab-2-3/main.cpp
+	<sys/types.h>
+	<unistd.h>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+	<errno.h>
+	<signal.h>
+

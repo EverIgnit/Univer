@@ -1,0 +1,11 @@
+CPP=g++
+CPPFLAGS=-Wall 
+PROGRAM_NAME=No1
+SOURCE_FILES=No1.cpp
+
+$(PROGRAM_NAME): $(SOURCE_FILES) 
+	$(CPP) $(CPPFLAGS) $^ -o $@
+	./$(PROGRAM_NAME)
+	
+start:
+	./$(PROGRAM_NAME) 

@@ -1,0 +1,12 @@
+CPP=g++
+CPPFLAGS=-lpthread
+CLEAN=-f
+PROGRAM_NAME=No4
+SOURCE_FILES=No4.cpp
+
+$(PROGRAM_NAME): $(SOURCE_FILES) 
+	$(CPP) $^ $(CPPFLAGS) -o $@ 
+	./$(PROGRAM_NAME)
+
+start:
+	./$(PROGRAM_NAME) 

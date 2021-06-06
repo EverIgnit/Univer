@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1590752002 source:/home/vlatislav/proga/lab-4/task1/lab-4-1/main.cpp
+	<pthread.h>
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<stdlib.h>
+	<iostream>
+
