@@ -1,0 +1,17 @@
+CPP=g++
+CPPFLAGS=-Wall
+PROGRAM_NAME=No2
+OBJECT_FILES=*.o
+SOURCE_FILES=no2.cpp
+CLEAN=rm -f
+FOO?=..
+
+$(PROGRAM_NAME): $(OBJECT_FILES)
+	$(CPP) $(CPPFLAGS) -o $@ $^
+	./$(PROGRAM_NAME) $(FOO) 
+
+$(OBJECT_FILES): $(SOURCE_FILES)
+	$(CPP) $(CPPFLAGS) -c $^
+
+clean:
+	$(CLEAN) $(OBJECT_FILES) 
