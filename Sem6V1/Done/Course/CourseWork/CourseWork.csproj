@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="~%24рсовая Белькевич 6 семестр.docx" />
+    <None Remove="~WRL0005.tmp" />
+    <None Remove="Курсовая Белькевич 6 семестр.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 

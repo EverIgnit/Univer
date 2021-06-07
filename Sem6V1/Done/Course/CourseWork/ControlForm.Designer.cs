@@ -43,7 +43,6 @@ namespace CourseWork
             this.ofdOpenTableFile2 = new System.Windows.Forms.OpenFileDialog();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.flpRadioJoins = new System.Windows.Forms.FlowLayoutPanel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -178,7 +177,7 @@ namespace CourseWork
             this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(3, 3);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(68, 19);
+            this.radioButton1.Size = new System.Drawing.Size(88, 19);
             this.radioButton1.TabIndex = 10;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Full Join";
@@ -188,29 +187,17 @@ namespace CourseWork
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(77, 3);
+            this.radioButton2.Location = new System.Drawing.Point(97, 3);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(105, 19);
+            this.radioButton2.Size = new System.Drawing.Size(130, 19);
             this.radioButton2.TabIndex = 11;
             this.radioButton2.Text = "Auto Inner Join";
             this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.Location = new System.Drawing.Point(188, 3);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(76, 19);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.Text = "Inner Join";
-            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // flpRadioJoins
             // 
             this.flpRadioJoins.Controls.Add(this.radioButton1);
             this.flpRadioJoins.Controls.Add(this.radioButton2);
-            this.flpRadioJoins.Controls.Add(this.radioButton3);
             this.flpRadioJoins.Location = new System.Drawing.Point(257, 3);
             this.flpRadioJoins.Name = "flpRadioJoins";
             this.flpRadioJoins.Size = new System.Drawing.Size(295, 39);
@@ -291,7 +278,7 @@ namespace CourseWork
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
             this.Controls.Add(this.flowLayoutPanel5);
             this.Name = "ControlForm";
             this.Text = "ControlForm";
@@ -324,7 +311,6 @@ namespace CourseWork
         private System.Windows.Forms.OpenFileDialog ofdOpenTableFile2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.FlowLayoutPanel flpRadioJoins;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
